@@ -41,7 +41,7 @@ if (newMonth == 1 || newMonth <= 12) {
 
 }
 else {
-    alert("your date is invaild")
+    alert("your month is invaild")
 }
 
 

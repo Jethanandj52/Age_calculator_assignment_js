@@ -7,7 +7,7 @@ var day = date.getDate();
 var year = date.getFullYear();
 
 var newdate = prompt("enter your birth date: (1-31) ",7);
-if (newdate == 1 && newdate <= 31) {
+if (newdate == 1 || newdate <= 31) {
     if (newdate <= day) {
         newdate = day - newdate;
 
@@ -28,7 +28,7 @@ else  {
 }
 
 var newMonth = prompt("Enter your birth month: (Jan=1, Feb=2,...Dec=12)",2)
-if (newMonth == 1 && newMonth <= 12) {
+if (newMonth == 1 || newMonth <= 12) {
     if (newMonth <= month) {
         newMonth = month - newMonth;
         document.write(newMonth + " months, ")
@@ -54,4 +54,3 @@ else {
     newYear = year - newYear
 }
 document.write(" and " + newYear + " years old")
-
